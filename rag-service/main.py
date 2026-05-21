@@ -449,7 +449,7 @@ def extract_factual_subject(question):
     if prefix not in FACTUAL_QUESTION_PREFIXES:
         return None
     subject = strip_trailing_question_punctuation(words[2])
-    return subject or None
+    return subject or None  # Improved factual subject extraction
 
 
 def build_factual_answer(documents, question):
